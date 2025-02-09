@@ -58,11 +58,57 @@
     padding-block:10rem;
 }
 
+
+
+/* Loader styling */
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ccc;
+    border-top: 5px solid #333;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* Spin animation for the loader */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Hide the main page initially */
+.hidden {
+    display: none;
+}
+
+/* Style for main content */
+/* #mainPage {
+    text-align: center;
+    margin-top: 20px;
+} */
+
+
+
+
     </style>
 </head>
 
 <body>
-    <main class="container-fluid p-0">
+    <div id="loader" class="loader"></div>
+    <script>
+      // Show loader for 7 seconds, then show main page
+setTimeout(() => {
+    document.getElementById('loader').style.display = 'none'; // Hide loader
+    document.getElementById('mainPage').classList.remove('hidden'); // Show main page
+}, 7000);
+
+        </script>
+        
+        
+    <main class="container-fluid p-0 hidden" id="mainPage" >
         <nav class="container-fluid">
             <div class="container-xl">
                 <a href="index.html" class="logo">
