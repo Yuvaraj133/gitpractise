@@ -58,7 +58,7 @@
 .intro{
     padding-block:10rem;
 }
-/* Loader style */
+/* Loader style
 .loader {
   position: fixed;
   top: 0;
@@ -80,12 +80,18 @@
   width: 50px;
   height: 50px;
   animation: spin 1s linear infinite;
-}
+} */
 
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+video {
+      width: 100vw;  /* 100% of the viewport width */
+      height: 100vh; /* 100% of the viewport height */
+      object-fit: cover; /* Ensures the video covers the screen area */
+      z-index: 1;
+    }
 
 
 
@@ -93,12 +99,24 @@
 </head>
 
 <body>
-    <!-- <div id="loader" class="loader"></div> -->
+    <div id="loader" class="loader"><video autoplay muted loop>
+        <source src="0000325097_flatverse_A_08_preview.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video></div>
     <script>
+// window.addEventListener("load", function () {
+//   const loader = document.getElementById("loader");
+//   loader.style.display = "none"; // Hide the loader
+// });
 window.addEventListener("load", function () {
   const loader = document.getElementById("loader");
-  loader.style.display = "none"; // Hide the loader
+
+  // Set a timeout of 7 seconds before hiding the loader
+  setTimeout(function() {
+    loader.style.display = "none"; // Hide the loader after 7 seconds
+  }, 7000); // 7000 milliseconds = 7 seconds
 });
+
 
 
 
