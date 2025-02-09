@@ -1348,7 +1348,7 @@ background: linear-gradient(to right, #480048, #C04848); /* W3C, IE 10+/ Edge, F
 .wrapper .images .img-1{
   height: 100%;
   width: 100%;
-  background: url("images/img.png") no-repeat;
+  background: url("images/img.svg") no-repeat;
  background-size:cover;
   /* background: url("images/car.jpg") no-repeat; */
 }
@@ -1358,7 +1358,7 @@ background: linear-gradient(to right, #480048, #C04848); /* W3C, IE 10+/ Edge, F
   width: 50%;
   /* filter: blur(5px); */
   background-size: cover;
-  background: url("images/img2.jpg") no-repeat;
+  background: url("images/WhatsApp\ Image\ 2025-02-09\ at\ 19.26.11_eece55ae.svg") no-repeat;
   /* background: url("images/car.png") no-repeat; */
 }
 .wrapper .slider{
