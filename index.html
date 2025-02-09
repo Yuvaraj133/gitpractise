@@ -58,40 +58,34 @@
 .intro{
     padding-block:10rem;
 }
-
-/* Loader styling */
+/* Loader style */
 .loader {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 50px;
-    height: 50px;
-    border: 5px solid #ccc;
-    border-top: 5px solid #333;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
 }
 
-/* Spin animation for the loader */
+.loader:before {
+  content: "";
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
-
-/* Hide the main page initially with opacity and visibility */
-#mainPage {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s, visibility 0s 0.5s;
-}
-
-/* Style for main content */
-#mainPage.show {
-    opacity: 1;
-    visibility: visible;
-    transition: opacity 0.5s, visibility 0s 0s;
-}
-
 
 
 
@@ -101,12 +95,11 @@
 <body>
     <div id="loader" class="loader"></div>
     <script>
-     
-// Show loader for 7 seconds, then show main page with animation
-setTimeout(() => {
-    document.getElementById('loader').style.display = 'none'; // Hide loader
-    document.getElementById('mainPage').classList.add('show'); // Show main page
-}, 5000);
+window.addEventListener("load", function () {
+  const loader = document.getElementById("loader");
+  loader.style.display = "none"; // Hide the loader
+});
+
 
 
         </script>
