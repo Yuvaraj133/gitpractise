@@ -5,7 +5,8 @@
 <head>
     <link rel="shortcut icon" href="images/logo.png" type="favicon" />
     <meta charset="UTF-8">
-    
+    <link rel="icon" href="bricklogo.png" type="image/png">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap-grid.css">
     <link rel="stylesheet" href="animate.css">
@@ -58,8 +59,6 @@
     padding-block:10rem;
 }
 
-
-
 /* Loader styling */
 .loader {
     position: absolute;
@@ -79,16 +78,19 @@
     100% { transform: rotate(360deg); }
 }
 
-/* Hide the main page initially */
-.hidden {
-    display: none;
+/* Hide the main page initially with opacity and visibility */
+#mainPage {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0s 0.5s;
 }
 
 /* Style for main content */
-/* #mainPage {
-    text-align: center;
-    margin-top: 20px;
-} */
+#mainPage.show {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s, visibility 0s 0s;
+}
 
 
 
@@ -99,16 +101,18 @@
 <body>
     <div id="loader" class="loader"></div>
     <script>
-      // Show loader for 7 seconds, then show main page
+     
+// Show loader for 7 seconds, then show main page with animation
 setTimeout(() => {
     document.getElementById('loader').style.display = 'none'; // Hide loader
-    document.getElementById('mainPage').classList.remove('hidden'); // Show main page
-}, 11000);
+    document.getElementById('mainPage').classList.add('show'); // Show main page
+}, 7000);
+
 
         </script>
         
-        
-    <main class="container-fluid p-0 hidden" id="mainPage" >
+    <div class="hidden" id="mainPage">
+    <main class="container-fluid p-0"  >
         <nav class="container-fluid">
             <div class="container-xl">
                 <a href="index.html" class="logo">
@@ -730,6 +734,7 @@ function downloadBrochure() {
             </div>
         </footer>
     </main>
+</div>
     <script src="odometer.js"></script>
     <script src="wow.js"></script>
     <script src="lenis.js"></script>
