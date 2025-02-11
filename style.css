@@ -541,7 +541,7 @@ section.portfolio {
 }
 
 .showcases .showcase {
-  border-top: 1px solid rgb(255, 0, 0);
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
 
@@ -554,7 +554,7 @@ section.portfolio {
   height: 100%;
   /* display: inline-block;
   margin-inline: auto; */
-  /* transition: 0.3s ease; */
+  transition: 0.3s ease;
 }
 
 .showcases .showcase .heading_3 {
@@ -563,28 +563,30 @@ section.portfolio {
   align-items: center;
   justify-content: center;
   opacity: 0.6;
-  /* transition: 0.3s ease; */
+  transition: 0.3s ease;
 }
 
 .showcases .showcase:hover .heading_3 {
   opacity: 1;
 }
-/* 
+
 .showcases .showcase:hover img {
-  transform: scale(3.3) !important;
+  transform: scale(1); /* Default scale */
 }
 
+/* For Mobile Devices (zoom remains at 1.1) */
 @media (max-width: 768px) {
   .showcases .showcase:hover img {
-    transform: scale(1.1); 
+    transform: scale(1.1); /* Slight zoom on mobile */
   }
 }
 
+/* For Desktop Devices (larger zoom on hover) */
 @media (min-width: 769px) {
   .showcases .showcase:hover img {
-    transform: scale(1.2); 
+    transform: scale(3.3); /* Larger zoom on desktop */
   }
-} */
+}
 
 marquee {
   background: #ffffff !important;
