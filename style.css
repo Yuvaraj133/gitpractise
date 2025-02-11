@@ -569,23 +569,22 @@ section.portfolio {
 .showcases .showcase:hover .heading_3 {
   opacity: 1;
 }
-
+/* 
 .showcases .showcase:hover img {
   transform: scale(3.3) !important;
 }
-/* For Mobile Devices (zoom remains at 1.1) */
+
 @media (max-width: 768px) {
   .showcases .showcase:hover img {
-    transform: scale(1.1); /* Keep the zoom effect on mobile */
+    transform: scale(1.1); 
   }
 }
 
-/* For Desktop Devices (larger zoom on hover) */
 @media (min-width: 769px) {
   .showcases .showcase:hover img {
-    transform: scale(1.2); /* Zoom effect is larger on desktop */
+    transform: scale(1.2); 
   }
-}
+} */
 
 marquee {
   background: #ffffff !important;
