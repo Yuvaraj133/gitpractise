@@ -573,6 +573,30 @@ section.portfolio {
 .showcases .showcase:hover img {
   transform: scale(1); /* Default scale */
 }
+@media (max-width: 555px) {
+  #downloadButton {
+    display: none;
+  }
+}
+
+
+.showcases .showcase:hover img {
+  transform: scale(1); /* Default scale */
+}
+
+/* For Mobile Devices (zoom remains at 1.1) */
+@media (max-width: 768px) {
+  .showcases .showcase:hover img {
+    transform: scale(1.1); /* Slight zoom on mobile */
+  }
+}
+
+/* For Desktop Devices (larger zoom on hover) */
+@media (min-width: 769px) {
+  .showcases .showcase:hover img {
+    transform: scale(3.3); /* Larger zoom on desktop */
+  }
+}
 
 /* For Mobile Devices (zoom remains at 1.1) */
 @media (max-width: 768px) {
