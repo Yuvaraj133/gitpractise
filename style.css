@@ -554,7 +554,7 @@ section.portfolio {
   height: 100%;
   /* display: inline-block;
   margin-inline: auto; */
-  transition: 0.3s ease;
+  /* transition: 0.3s ease; */
 }
 
 .showcases .showcase .heading_3 {
@@ -563,7 +563,7 @@ section.portfolio {
   align-items: center;
   justify-content: center;
   opacity: 0.6;
-  transition: 0.3s ease;
+  /* transition: 0.3s ease; */
 }
 
 .showcases .showcase:hover .heading_3 {
