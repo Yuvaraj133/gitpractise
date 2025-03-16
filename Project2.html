@@ -266,7 +266,20 @@ document.querySelectorAll('.menu_container a').forEach(function (link) {
             </div>
         </footer>
         <script>
-         
+         const imgs = document.querySelectorAll(".gallery img")
+        
+        scrolling()
+        window.onscroll = scrolling
+        
+        function scrolling() {
+          const viewportHeight = window.innerHeight
+          imgs.forEach(img => {
+            if (img.getBoundingClientRect().top < viewportHeight) {
+              img.style.animationPlayState = "running"
+            }
+          })
+        }
+        </script>
         </script>
     </main>
     <script src="odometer.js"></script>
