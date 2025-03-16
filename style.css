@@ -570,9 +570,12 @@ section.portfolio {
   opacity: 1;
 }
 
-.showcases .showcase:hover img {
-  transform: scale(3.3);
+@media (min-width: 768px) { /* Apply hover effect only for screens wider than 768px */
+  .showcases .showcase:hover img {
+      transform: scale(3.3);
+  }
 }
+
 
 marquee {
   background: #ffffff !important;
