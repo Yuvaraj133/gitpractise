@@ -309,11 +309,7 @@ nav.container-fluid .btn_1:hover {
 }
 
 .intro {
-<<<<<<< HEAD
-  background: url("quality1.JPG")   ;
-=======
   background: url("quality1.webp")   ;
->>>>>>> 8c3ab1c (Yuvaraj Commit)
   background-size: cover;
   
   position: relative;
@@ -575,49 +571,7 @@ section.portfolio {
 }
 
 .showcases .showcase:hover img {
-<<<<<<< HEAD
-  transform: scale(1); /* Default scale */
-}
-@media (max-width: 555px) {
-  #downloadButton {
-    display: none;
-  }
-}
-
-
-.showcases .showcase:hover img {
-  transform: scale(1); /* Default scale */
-}
-
-/* For Mobile Devices (zoom remains at 1.1) */
-@media (max-width: 768px) {
-  .showcases .showcase:hover img {
-    transform: scale(1.1); /* Slight zoom on mobile */
-  }
-}
-
-/* For Desktop Devices (larger zoom on hover) */
-@media (min-width: 769px) {
-  .showcases .showcase:hover img {
-    transform: scale(3.3); /* Larger zoom on desktop */
-  }
-}
-
-/* For Mobile Devices (zoom remains at 1.1) */
-@media (max-width: 768px) {
-  .showcases .showcase:hover img {
-    transform: scale(1.1); /* Slight zoom on mobile */
-  }
-}
-
-/* For Desktop Devices (larger zoom on hover) */
-@media (min-width: 769px) {
-  .showcases .showcase:hover img {
-    transform: scale(3.3); /* Larger zoom on desktop */
-  }
-=======
   transform: scale(3.3);
->>>>>>> 8c3ab1c (Yuvaraj Commit)
 }
 
 marquee {
@@ -1394,11 +1348,7 @@ background: linear-gradient(to right, #480048, #C04848); /* W3C, IE 10+/ Edge, F
 .wrapper .images .img-1{
   height: 100%;
   width: 100%;
-<<<<<<< HEAD
-  background: url("images/img.svg") no-repeat;
-=======
   background: url("images/img.png") no-repeat;
->>>>>>> 8c3ab1c (Yuvaraj Commit)
  background-size:cover;
   /* background: url("images/car.jpg") no-repeat; */
 }
@@ -1408,11 +1358,7 @@ background: linear-gradient(to right, #480048, #C04848); /* W3C, IE 10+/ Edge, F
   width: 50%;
   /* filter: blur(5px); */
   background-size: cover;
-<<<<<<< HEAD
-  background: url("images/WhatsApp\ Image\ 2025-02-09\ at\ 19.26.11_eece55ae.svg") no-repeat;
-=======
   background: url("images/img2.jpg") no-repeat;
->>>>>>> 8c3ab1c (Yuvaraj Commit)
   /* background: url("images/car.png") no-repeat; */
 }
 .wrapper .slider{
