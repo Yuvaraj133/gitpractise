@@ -492,7 +492,7 @@ section.rating {
 
 @media (max-width: 768px) {
   .stats .heading_3 span {
-    font-size: 2.0rem !important; /* Reduce size for mobile */
+    font-size: 3.5rem !important; /* Reduce size for mobile */
     font-weight: bold;
   }
 }
@@ -576,7 +576,7 @@ section.portfolio {
   }
 
   .showcase:hover img {
-      transform: scale(1.1); /* Bring the image forward */
+      transform: scale(2.5); /* Bring the image forward */
   }
 }
 
