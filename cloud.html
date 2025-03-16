@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloudinary Direct Upload</title>
+</head>
+<body>
+
+    <h2>Upload Image to Cloudinary</h2>
+    <input type="file" id="fileInput">
+    <button onclick="uploadImage()">Upload</button>
+    <p id="status"></p>
+    <img id="preview" style="max-width: 100%; display: none;">
+
+    <script>
+        function uploadImage() {
+            const fileInput = document.getElementById("fileInput");
+            const file = fileInput.files[0];
+            if (!file) {
+                alert("Please select a file.");
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append("file", file);
+            formData.append("api_key", "cloudinary://265982592987687:PGrVKK48kfEml68bJEAAaEH-Xuo@dt9wpze5l"); // Replace with your Cloudinary API key
+            formData.append("timestamp", Math.floor(Date.now() / 1000));
+
+            document.getElementById("status").innerText = "Uploading...";
+
+            fetch("https://api.cloudinary.com/v1_1/dt9wpze5l/image/upload", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("status").innerText = "Upload Successful!";
+                document.getElementById("preview").src = data.secure_url;
+                document.getElementById("preview").style.display = "block";
+                console.log("Uploaded Image URL:", data.secure_url);
+            })
+            .catch(error => {
+                document.getElementById("status").innerText = "Upload Failed!";
+                console.error("Error:", error);
+            });
+        }
+    </script>
+
+</body>
+</html>
