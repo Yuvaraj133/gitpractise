@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "text", sans-serif;
  
   font-weight: 500;
 }
@@ -14,6 +13,14 @@ html {
  
   
 }
+body {
+  font-family: "text", sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "heading", sans-serif;
+}
+
 
 ::-webkit-scrollbar {
   display: none;
@@ -23,13 +30,18 @@ main{
 }
 @font-face {
   font-family: "heading";
-  src: url("CabinetGrotesk.ttf") format("truetype");
+  src: url("fonts/false.woff2") format("woff2"),
+       url("fonts/false.ttf") format("truetype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "text";
-  src: url("Nunito.ttf") format("truetype");
+  src: url("fonts/false1.woff2") format("woff2"),
+       url("fonts/false1.ttf") format("truetype");
+  font-display: swap;
 }
+
 
 body {
   font-size: 1.6rem;
