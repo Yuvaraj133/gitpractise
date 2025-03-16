@@ -576,7 +576,7 @@ section.portfolio {
   }
 
   .showcase:hover img {
-      transform: scale(2.5); /* Bring the image forward */
+      transform: scale(2); /* Bring the image forward */
   }
 }
 
