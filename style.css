@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "heading", sans-serif;
  
   font-weight: 500;
 }
@@ -13,14 +14,6 @@ html {
  
   
 }
-body {
-  font-family: "text", sans-serif;
-}
-
-h1, h2, h3 {
-  font-family: "heading", sans-serif;
-}
-
 
 ::-webkit-scrollbar {
   display: none;
@@ -28,20 +21,18 @@ h1, h2, h3 {
 main{
   /* scroll-behavior: smooth; */
 }
+
 @font-face {
   font-family: "heading";
-  src: url("fonts/false.woff2") format("woff2"),
-       url("fonts/false.ttf") format("truetype");
+  src: url("fonts/false.woff2") format("woff2");
   font-display: swap;
 }
 
 @font-face {
   font-family: "text";
-  src: url("fonts/false1.woff2") format("woff2"),
-       url("fonts/false1.ttf") format("truetype");
+  src: url("fonts/false1.woff2") format("woff2");
   font-display: swap;
 }
-
 
 body {
   font-size: 1.6rem;
@@ -582,11 +573,6 @@ section.portfolio {
   opacity: 1;
 }
 
-@media (min-width: 768px) { /* Apply hover effect only for screens wider than 768px */
-  .showcases .showcase:hover img {
-      transform: scale(3.3);
-  }
-}
 
 
 marquee {
