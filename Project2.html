@@ -15,6 +15,17 @@
     <link rel="preload" as="image" href="images/10Square/fghg-min.avif">
 </head>
 <style>
+    .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            display: block;
+        }
     .intro {
   background: url("./images/10Square/fghg.jpg")   ;
   background-size: cover;
@@ -228,14 +239,14 @@ document.querySelectorAll('.menu_container a').forEach(function (link) {
         <br>
 
         <section class="gallery">
-          <img src="images/10Square/fghg-min.avif" alt="" loading="eager">
-          <img src="images/10Square/IMG_2394-min.avif" alt="" loading="lazy">
-          <img src="images/10Square/IMG_2399-min.avif" alt="" loading="lazy">
-          <img src="images/10Square/IMG_2403-min.avif" alt="" loading="lazy">
-          <img src="images/10Square/IMG_2405-min.avif" alt="" loading="lazy">
-          <img src="images/10Square/IMG_2409-min.avif" alt="" loading="lazy">
-          <img src="images/10Square/IMG_2410-min.avif" alt="" loading="lazy">
-          <img src="images/10Square/IMG_2424-min.avif" alt="" loading="lazy">
+          <img src="images/10Square/fghg-min.avif" alt="" width="300" height="200" loading="eager">
+          <img src="images/10Square/IMG_2394-min.avif" alt="" width="300" height="200" loading="lazy">
+          <img src="images/10Square/IMG_2399-min.avif" alt="" width="300" height="200" loading="lazy">
+          <img src="images/10Square/IMG_2403-min.avif" alt="" width="300" height="200" loading="lazy">
+          <img src="images/10Square/IMG_2405-min.avif" alt="" width="300" height="200" loading="lazy">
+          <img src="images/10Square/IMG_2409-min.avif" alt="" width="300" height="200" loading="lazy">
+          <img src="images/10Square/IMG_2410-min.avif" alt="" width="300" height="200" loading="lazy">
+          <img src="images/10Square/IMG_2424-min.avif" alt="" width="300" height="200" loading="lazy">
       </section>
 
         <footer>
