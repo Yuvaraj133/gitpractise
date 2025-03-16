@@ -492,11 +492,11 @@ section.rating {
 
 @media (max-width: 768px) {
   .stats .heading_3 span {
-    font-family: "heading";
-    font-size: 4.0rem !important;
+    font-size: 2.0rem !important; /* Reduce size for mobile */
     font-weight: bold;
   }
 }
+
 
 
 
@@ -570,6 +570,16 @@ section.portfolio {
   margin-inline: auto; */
   transition: 0.3s ease;
 }
+@media (min-width: 769px) { /* Apply effect only for desktop */
+  .showcase img {
+      transition: transform 0.3s ease-in-out;
+  }
+
+  .showcase:hover img {
+      transform: scale(1.1); /* Bring the image forward */
+  }
+}
+
 
 .showcases .showcase .heading_3 {
   height: 100%;
