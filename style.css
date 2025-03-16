@@ -489,6 +489,17 @@ section.rating {
   align-items: center;
 }
 
+
+@media (max-width: 768px) {
+  .stats .heading_3 span {
+    font-family: "heading";
+    font-size: 4.0rem !important;
+    font-weight: bold;
+  }
+}
+
+
+
 .stats .heading_3 span {
   font-family: "heading";
   font-size: 4.8rem;
