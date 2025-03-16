@@ -5,6 +5,7 @@
 <head>
     <link rel="shortcut icon" href="images/logo.png" type="favicon" />
     <meta charset="UTF-8">
+    <link rel="preload" as="image" href="images/UmasKitchen/1.avif" type="image/avif">
     <link rel="icon" type="image/png" href="bricklogo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap-grid.css">
@@ -226,9 +227,22 @@ document.querySelectorAll('.menu_container a').forEach(function (link) {
         </section>
         <br>
 
-       <section class="gallery">
-<img src="images/UmasKitchen/12.jpg" alt=""> <img src="images/UmasKitchen/467358067_17885809239138713_3320466810913732144_n.jpg" alt=""><img src="images/UmasKitchen/IMG_6013.JPG" alt=""> <img src="images/UmasKitchen/IMG_6014.JPG" alt=""> <img src="images/UmasKitchen/IMG_6274.JPG" alt="">
-       </section>
+      <!-- Preload the first image for faster initial loading -->
+
+
+<section class="gallery">
+  <img src="images/UmasKitchen/1.avif" alt="" loading="eager">
+  <img src="images/UmasKitchen/2.avif" alt="" loading="lazy">
+  <img src="images/UmasKitchen/3.avif" alt="" loading="lazy">
+  <img src="images/UmasKitchen/4.avif" alt="" loading="lazy">
+  <img src="images/UmasKitchen/5.avif" alt="" loading="lazy">
+  <img src="images/UmasKitchen/6.avif" alt="" loading="lazy">
+  <img src="images/UmasKitchen/7.avif" alt="" loading="lazy">
+  <img src="images/UmasKitchen/8.avif" alt="" loading="lazy">
+  <img src="images/UmasKitchen/9.avif" alt="" loading="lazy">
+  <img src="images/UmasKitchen/10.avif" alt="" loading="lazy">
+</section>
+
 
         <footer>
             <div class="container-xl">
