@@ -12,10 +12,11 @@
     <link rel="stylesheet" href="odometer.css">
     <link rel="stylesheet" href="style.css">
     <title>Bricky Box Associates</title>
+    <link rel="preload" as="image" href="images/10Square/fghg-min.avif">
 </head>
-<!-- <style>
+<style>
     .intro {
-  background: url("./images/10Square/fghg-min.avif")   ;
+  background: url("./images/10Square/fghg.jpg")   ;
   background-size: cover;
   
   position: relative;
@@ -151,7 +152,7 @@ header h2.second-title {
     padding: 2rem 10% 10%;
   }
 }
-</style> -->
+</style>
 
 <body>
     <main class="container-fluid p-0">
@@ -187,14 +188,55 @@ function downloadBrochure() {
 </script>
             </div>
         </nav>
-      
-       
+        <script>
+// Open/Close the menu when the hamburger icon is clicked
+document.querySelector('.menu').addEventListener('click', function () {
+    const menuContainer = document.querySelector('.menu_container');
+    if (menuContainer.style.display === 'block') {
+        menuContainer.style.display = 'none';
+    } else {
+        menuContainer.style.display = 'block';
+    }
+});
+
+// Close the menu when any link inside the menu container is clicked
+document.querySelectorAll('.menu_container a').forEach(function (link) {
+    link.addEventListener('click', function () {
+        document.querySelector('.menu_container').style.display = 'none';
+    });
+});
+
+
+        </script>
+        <section class="intro">
+            <div class="container-xl">
+                <div class="heading_1 wow animate__animated animate__fadeInUp" id="beyond">
+                   10<br> Square
+                </div>
+                <br>   <br>   <br>   <br>   <br>   <br>
+                <!-- <p class="wow animate__animated animate__fadeInUp" style="color: white;">
+                    Our architects breathe life into dreams, creating
+                    environments where innovation meets tradition,
+                    and spaces transcend mere structures
+                    
+                </p> -->
+         
+
+            
+            </div>
+        </section>
         <br>
 
-       <section class="gallery">
-        <img src="images/10Square/fghg-min.avif" alt=""><img src="images/10Square/IMG_2394-min.avif" alt=""><img src="images/10Square/IMG_2399-min.avif" alt=""><img src="images/10Square/IMG_2403-min.avif" alt=""><img src="images/10Square/IMG_2405-min.avif" alt=""> <img src="images/10Square/IMG_2394-min.avif" alt=""> <img src="images/10Square/IMG_2409-min.avif" alt=""> <img src="images/10Square/IMG_2410-min.avif" alt=""> <img src="images/10Square/IMG_2424-min.avif" alt="">
-
-       </section>
+        <section class="gallery">
+          <img src="images/10Square/fghg-min.avif" alt="" loading="eager">
+          <img src="images/10Square/IMG_2394-min.avif" alt="" loading="lazy">
+          <img src="images/10Square/IMG_2399-min.avif" alt="" loading="lazy">
+          <img src="images/10Square/IMG_2403-min.avif" alt="" loading="lazy">
+          <img src="images/10Square/IMG_2405-min.avif" alt="" loading="lazy">
+          <img src="images/10Square/IMG_2409-min.avif" alt="" loading="lazy">
+          <img src="images/10Square/IMG_2410-min.avif" alt="" loading="lazy">
+          <img src="images/10Square/IMG_2424-min.avif" alt="" loading="lazy">
+      </section>
 
         <footer>
             <div class="container-xl">
@@ -223,26 +265,14 @@ function downloadBrochure() {
                 <small> &copy; The Bricky Box Associates 2025. All Rights Reserved</small>
             </div>
         </footer>
-        <!-- <script>
-            const imgs = document.querySelectorAll(".gallery img")
-        
-        scrolling()
-        window.onscroll = scrolling
-        
-        function scrolling() {
-          const viewportHeight = window.innerHeight
-          imgs.forEach(img => {
-            if (img.getBoundingClientRect().top < viewportHeight) {
-              img.style.animationPlayState = "running"
-            }
-          })
-        }
-        </script> -->
+        <script>
+         
+        </script>
     </main>
-    <!-- <script src="odometer.js"></script>
-    <script src="wow.js"></script> -->
+    <script src="odometer.js"></script>
+    <script src="wow.js"></script>
     <!-- <script src="lenis.js"></script> -->
-    <!-- <script>
+    <script>
         const wow = new WOW();
         wow.init();
         const lenis = new Lenis();
@@ -355,9 +385,9 @@ function downloadBrochure() {
     }
   }
 }
-    </script> -->
-    <!-- <script>
+    </script>
+    <script>
         initComparisons();
-        </script> -->
+        </script>
 </body>
 </html>
